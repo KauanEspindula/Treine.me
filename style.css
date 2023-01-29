@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button,
+input,
+textarea {
+  border: none;
+}
+
+body {
+  text-align: center;
+
+  min-height: 100vh;
+
+  background: linear-gradient(
+    180deg,
+    rgba(227, 255, 248, 0) 82.08%,
+    rgba(227, 255, 248, 0.38) 100%
+  );
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 65px 0 58px;
+}
+
+#page {
+  height: 625px;
+  width: 1008px;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  gap: 48px;
+
+  list-style-type: none;
+}
+
+nav a {
+  display: flex;
+  justify-content: space-between;
+
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1f1534;
+
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+nav a:hover {
+  font-weight: bold;
+  opacity: 1;
+}
+
+main {
+  display: flex;
+  gap: 102px;
+  padding-bottom: 82px;
+}
+
+main h1 {
+  font-family: "Mulish", sans-serif;
+  font-weight: normal;
+  font-size: 49px;
+  line-height: 56px;
+  color: #000;
+}
+
+main h1 span {
+  color: #89c5cc;
+  font-weight: bold;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  padding-top: 51px;
+
+  text-align: left;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  color: #7d7987;
+}
+
+main button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #69b99d;
+
+  width: 179px;
+  height: 56px;
+
+  border-radius: 4px;
+
+  gap: 10px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  color: #f9f9f9;
+}
+
+main button:hover {
+  /* Faz com que quando passar o ponteiro por cima, mudara o cursor */
+  cursor: pointer;
+
+  /* Quando eu passar o mouse em cime do checkbox, a cor ficara mais escura */
+  background: #469076;
+}
+
+footer {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+
+  padding-bottom: 30px;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
