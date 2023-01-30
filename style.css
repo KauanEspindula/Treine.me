@@ -11,8 +11,6 @@ textarea {
 }
 
 body {
-  text-align: center;
-
   min-height: 100vh;
 
   background: linear-gradient(
@@ -22,26 +20,26 @@ body {
   );
 }
 
+#page {
+  width: 1008px;
+  margin: 0 auto;
+  padding: 64px 0 30px;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 65px 0 58px;
+  padding-bottom: 58px;
 }
 
-#page {
-  height: 625px;
-  width: 1008px;
-  margin: 0 auto;
-}
-
-nav ul {
+ul {
   display: flex;
   gap: 48px;
 
   list-style-type: none;
 }
 
-nav a {
+ul li a {
   display: flex;
   justify-content: space-between;
 
@@ -61,11 +59,13 @@ nav a:hover {
 
 main {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   gap: 102px;
-  padding-bottom: 82px;
 }
 
-main h1 {
+section h1 {
   font-family: "Mulish", sans-serif;
   font-weight: normal;
   font-size: 49px;
@@ -73,42 +73,39 @@ main h1 {
   color: #000;
 }
 
-main h1 span {
+section h1 span {
   color: #89c5cc;
   font-weight: bold;
 }
 
 .text {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-
-  padding-top: 51px;
-
-  text-align: left;
-
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 28px;
   color: #7d7987;
+
+  padding: 40px 0;
 }
 
 main button {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
+
   background: #69b99d;
+  border-radius: 4px;
 
   width: 179px;
   height: 56px;
+}
 
-  border-radius: 4px;
-
-  gap: 10px;
-
+button p {
   font-family: "DM Sans", sans-serif;
-  font-size: 16px;
+  font-weight: 500;
   line-height: 21px;
+  font-size: 16px;
+
   color: #f9f9f9;
 }
 
@@ -122,10 +119,16 @@ main button:hover {
 
 footer {
   font-family: "Open Sans", sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 28px;
 
-  padding-bottom: 30px;
+  padding-top: 82px;
+
+  width: 592px;
+  margin: 0 auto;
+  text-align: center;
+
+  width: 592px;
 }
 
 footer a {
